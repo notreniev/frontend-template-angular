@@ -1,0 +1,28 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+
+</div>
+
+<div class="content" role="main">
+
+  <!-- Highlight Card -->
+  <div class="card highlight-card card-small">
+
+    <span>{{ title }} app is running!</span>
+
+  </div>
+
+
+  <div class="card-container">
+    <div *ngFor="let hero of heroes$ | async">
+      <app-hero [hero]="hero"></app-hero>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+  </footer>
+
+</div>
+
+<router-outlet></router-outlet>
